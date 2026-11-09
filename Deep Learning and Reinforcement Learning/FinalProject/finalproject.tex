@@ -1,0 +1,176 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{fancyhdr}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.65em}
+\newcommand{\checkmarkbox}{\fbox{\rule{0pt}{0.9ex}\rule{0.9ex}{0pt}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Deep Learning and Reinforcement Learning}
+\fancyhead[R]{\small Final Project}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+
+\begin{titlepage}
+  \thispagestyle{empty}
+  \vspace*{1.25in}
+  \rule{\textwidth}{2pt}
+  \vspace{0.35in}
+
+  {\Huge\bfseries Final Project Report\par}
+  \vspace{0.2in}
+  {\Large Deep Learning and Reinforcement Learning\par}
+
+  \vspace{0.55in}
+  \begin{minipage}{0.86\textwidth}
+    \large
+    This document presents the objectives, report structure, deliverables,
+    and evaluation criteria for the final project. It is intended to guide
+    the preparation of a concise, stakeholder-ready analytical report.
+  \end{minipage}
+
+  \vfill
+  \begin{tabular}{@{}ll@{}}
+    \textbf{Deliverable:} & Written analytical report submitted as a PDF\\
+    \textbf{Audience:} & Senior business and analytics stakeholders\\
+    \textbf{Focus:} & Deep learning or reinforcement learning application
+  \end{tabular}
+
+  \vspace{0.55in}
+  \rule{\textwidth}{2pt}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Project Overview}
+
+One of the main objectives of this course is to provide hands-on experience
+in communicating insightful and impactful findings to stakeholders. In this
+project, you will use the tools and techniques learned throughout the course
+to apply deep learning to a task of your choosing.
+
+The application may be supervised or unsupervised and may involve
+classification, image analysis, text analysis, or another suitable problem.
+You will refine your model, compare alternatives, and communicate the
+insights found during model development. The final-project questions will be
+derived from the selected case study. You may submit the assignment using
+either the AI-graded or peer-reviewed option.
+
+\section{Choosing a Data Set}
+
+Before beginning the analysis, select a data set that is meaningful to you.
+Consider a public data set similar to information available in your workplace,
+a data set you have always wanted to analyze, sports data, data from a
+datathon, or a data-for-good project.
+
+Sample data sets used in the course's Python notebook demonstrations may also
+be used. You may optionally use the discussion board to brainstorm with peers
+and identify suitable data sets. Participation in the discussion board is not
+required.
+
+\section{Final Project Report Requirements}
+
+The primary report should emphasize analytical judgment, a transparent
+thought process, and actionable next steps. Write for a senior audience, such
+as a Chief Data Officer or Head of Analytics. The report must include the
+following sections.
+
+\begin{enumerate}
+  \item \textbf{Objective and business value.} State the main objective of
+    the analysis, identify whether the model uses a specific deep learning or
+    reinforcement learning algorithm, and explain the benefits for the
+    business or relevant stakeholders.
+
+  \item \textbf{Data description.} Describe the selected data set, summarize
+    its attributes, and explain what the analysis is intended to accomplish.
+
+  \item \textbf{Exploration and preparation.} Summarize the data exploration
+    process and document actions taken for data cleaning, transformation, or
+    feature engineering.
+
+  \item \textbf{Model variations.} Summarize training for at least three
+    variations of the selected deep learning model. Variations may use
+    different architectures, clustering techniques, hyperparameters, or other
+    justified choices.
+
+  \item \textbf{Final model recommendation.} Explain which model you
+    recommend and why it best fits the stated needs, considering accuracy,
+    interpretability, operational constraints, and explainability.
+
+  \item \textbf{Key findings and insights.} Walk the reader through the main
+    findings from the modeling exercise and connect them explicitly to the
+    project objectives.
+
+  \item \textbf{Next steps.} Suggest practical improvements, such as
+    revisiting the model, collecting additional observations, or adding
+    features that could improve performance or usefulness.
+\end{enumerate}
+
+\section{Deliverable and Submission Guidelines}
+
+Submit a written analytical report as a PDF. The report should focus on
+insights, findings, and recommendations rather than presenting an undigested
+record of experimentation. Include visualizations when they support the
+analysis and help the reader understand the data, model behavior, or
+recommendations.
+
+\subsection{Recommended Report Structure}
+
+\begin{itemize}
+  \item Executive summary
+  \item Business objective and stakeholder value
+  \item Data description and preparation
+  \item Exploratory analysis
+  \item Model design and comparison
+  \item Recommended model
+  \item Key findings and limitations
+  \item Recommendations and next steps
+\end{itemize}
+
+\section{Evaluation Criteria}
+
+The project will be evaluated using the following criteria:
+
+\begin{itemize}
+  \item A clear and comprehensive description of the data
+  \item A well-defined statement of the primary analysis objective(s)
+  \item A comparison of multiple deep learning models with a justified final
+    model selection
+  \item Clear presentation of key findings aligned with the objective(s)
+  \item Identification of model limitations and a well-articulated plan for
+    future improvement
+\end{itemize}
+
+\section{Submission Checklist}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Final review checklist}
+  \label{tab:checklist}
+  \begin{tabular}{@{}p{0.68\textwidth}p{0.18\textwidth}@{}}
+    \hline
+    \textbf{Requirement} & \textbf{Complete}\\
+    \hline
+    Objective and stakeholder value are clearly stated & \checkmarkbox\\
+    Data set, attributes, and intended outcome are described & \checkmarkbox\\
+    Exploration, cleaning, and feature engineering are documented & \checkmarkbox\\
+    At least three model variations are compared & \checkmarkbox\\
+    Final model is recommended with supporting justification & \checkmarkbox\\
+    Key findings are connected to the project objective & \checkmarkbox\\
+    Limitations and practical next steps are included & \checkmarkbox\\
+    Report is submitted as a polished PDF & \checkmarkbox\\
+    \hline
+  \end{tabular}
+\end{table}
+
+\end{document}
